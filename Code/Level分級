@@ -1,0 +1,83 @@
+#include <bits/stdc++.h>
+using namespace std;
+struct vocabulary{
+    string voc;
+    string p;
+    string level;
+    string cn;
+};
+bool compareByLevel(const vocabulary &a,const vocabulary &b)
+{
+    if(a.level == b.level){
+        return a.voc[0] < b.voc[0];
+    }
+    return a.level < b.level;
+}
+int main(){
+    std::ifstream ifs;
+    std::fstream ofs;
+    vocabulary data[10000];
+    int num=0;
+    ifs.open("input.txt");
+    while(ifs>>data[num].voc>>data[num].p>>data[num].level){
+        num++;
+    }
+    ifs.close();
+    sort(data,data+num,compareByLevel);
+    //Level 1
+    ofs.open("VocEng1.txt");
+    for(int i=0;i<num;i++){
+        if(data[i].level=="1"){
+            ofs<<data[i].voc<<'\n';
+        }
+
+    }
+    ofs.close();
+
+    //Level 2
+    ofs.open("VocEng2.txt");
+    for(int i=0;i<num;i++){
+        if(data[i].level=="2"){
+            ofs<<data[i].voc<<'\n';
+        }
+    }
+    ofs.close();
+
+    //Level 3
+    ofs.open("VocEng3.txt");
+    for(int i=0;i<num;i++){
+        if(data[i].level=="3"){
+            ofs<<data[i].voc<<'\n';
+        }
+    }
+    ofs.close();
+
+    //Level 4
+    ofs.open("VocEng4.txt");
+    for(int i=0;i<num;i++){
+        if(data[i].level=="4"){
+            ofs<<data[i].voc<<'\n';
+        }
+    }
+    ofs.close();
+    
+    //Level 5
+    ofs.open("VocEng5.txt");
+    for(int i=0;i<num;i++){
+        if(data[i].level=="5"){
+            ofs<<data[i].voc<<'\n';
+        }
+    }
+    ofs.close();
+    
+    //Level 6
+    ofs.open("VocEng6.txt");
+    for(int i=0;i<num;i++){
+        if(data[i].level=="6"){
+            ofs<<data[i].voc<<'\n';
+        }
+    }
+    ofs.close();
+    system("pause");
+    return 0;
+}
