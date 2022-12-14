@@ -1,0 +1,128 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    std::ifstream ifs;
+    std::fstream ofs;
+    string Eng[10000],Cn[10000];
+    //Level 1
+    ifs.open("VocEng1.txt");
+    int num=0;
+    while(ifs>>Eng[num]){
+        num++;
+    }
+    ifs.close();
+    num=0;
+    ifs.open("VocCn1.txt");
+    while(ifs>>Cn[num]){
+        num++;
+    }
+    ifs.close();
+    ofs.open("VocLevel1.txt");
+    for(int i=0;i<num;i++){
+        ofs<<setw(60)<<left<<Eng[i]<<setw(130)<<left<<Cn[i]<<'\n';
+
+    }
+    ofs.close();
+
+    //Level 2
+    ifs.open("VocEng2.txt");
+    num=0;
+    while(ifs>>Eng[num]){
+        num++;
+    }
+    ifs.close();
+    num=0;
+    ifs.open("VocCn2.txt");
+    while(ifs>>Cn[num]){
+        num++;
+    }
+    ifs.close();
+    ofs.open("VocLevel2.txt");
+    for(int i=0;i<num;i++){
+        ofs<<setw(60)<<left<<Eng[i]<<setw(130)<<left<<Cn[i]<<'\n';
+
+    }
+    ofs.close();
+
+    //Level 3
+    ifs.open("VocEng3.txt");
+    num=0;
+    while(ifs>>Eng[num]){
+        num++;
+    }
+    ifs.close();
+    num=0;
+    ifs.open("VocCn3.txt");
+    while(ifs>>Cn[num]){
+        num++;
+    }
+    ifs.close();
+    ofs.open("VocLevel3.txt");
+    for(int i=0;i<num;i++){
+        ofs<<setw(60)<<left<<Eng[i]<<setw(130)<<left<<Cn[i]<<'\n';
+
+    }
+    ofs.close();
+
+    //Level 4
+    ifs.open("VocEng4.txt");
+    num=0;
+    while(ifs>>Eng[num]){
+        num++;
+    }
+    ifs.close();
+    num=0;
+    ifs.open("VocCn4.txt");
+    while(ifs>>Cn[num]){
+        num++;
+    }
+    ifs.close();
+    ofs.open("VocLevel4.txt");
+    for(int i=0;i<num;i++){
+        ofs<<setw(60)<<left<<Eng[i]<<setw(130)<<left<<Cn[i]<<'\n';
+
+    }
+    ofs.close();
+
+    //Level 5
+    ifs.open("VocEng5.txt");
+    num=0;
+    while(ifs>>Eng[num]){
+        num++;
+    }
+    ifs.close();
+    num=0;
+    ifs.open("VocCn5.txt");
+    while(ifs>>Cn[num]){
+        num++;
+    }
+    ifs.close();
+    ofs.open("VocLevel5.txt");
+    for(int i=0;i<num;i++){
+        ofs<<setw(60)<<left<<Eng[i]<<setw(130)<<left<<Cn[i]<<'\n';
+
+    }
+    ofs.close();
+
+    //Level 6
+    ifs.open("VocEng6.txt");
+    num=0;
+    while(ifs>>Eng[num]){
+        num++;
+    }
+    ifs.close();
+    num=0;
+    ifs.open("VocCn6.txt");
+    while(ifs>>Cn[num]){
+        num++;
+    }
+    ifs.close();
+    ofs.open("VocLevel6.txt");
+    for(int i=0;i<num;i++){
+        ofs<<setw(60)<<left<<Eng[i]<<setw(130)<<left<<Cn[i]<<'\n';
+
+    }
+    ofs.close();
+    system("pause");
+    return 0;
+}
